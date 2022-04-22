@@ -3,7 +3,7 @@
 main() 
 {
     # Run the uvicurn app and auto reload based on save
-    uvicorn main:app --reload
+    uvicorn app.main:app --reload
 }
 
 main
