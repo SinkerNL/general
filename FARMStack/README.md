@@ -4,3 +4,5 @@ The example is taken from https://www.youtube.com/watch?v=OzUzrs8uJl8&t=587s and
 
 ## MongoDB
 In this tutorial, mongoDB atlas is used (mongodb.com/cloud/atlas/signup). We will not necessarily use this. I will simply use a Docker container that will spin up a MongoDB instance, and afterwards we'll use MongoDB Compass to connect to it. 
+
+The Dockerfile for this can be found under the backend folder. 
