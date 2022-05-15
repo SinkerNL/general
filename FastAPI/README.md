@@ -20,3 +20,11 @@ Create -> post => /posts
 Read -> get => /posts or /posts:id
 Update -> put/patch => /posts/:id
 Delete -> delete => /posts/:id
+
+# Schema models
+- Schema/Pydantic models define the structure of a request & response
+- This ensures that when a user wants to create a post, the request will only go through if it has a 'title' and 'content' in the body. 
+
+SQLALCHEMY
+- Responsible for defining the columns of our 'posts' table within postgres
+- Is used to query, create delete and or update entries within the database.
