@@ -1,0 +1,2 @@
+# Flutter Basics
+In this repository, a basic flutter program will be created, in order to get myself started with Flutter as a frontend framework. This can be for example used together with a FastAPI backend. 
