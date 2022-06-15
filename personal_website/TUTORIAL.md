@@ -1,0 +1,14 @@
+# Tutorial
+For the first requirement, we need a simple frontend. In order to do so, I will use a frontend called "lowdefy".
+
+## Installing lowdefy
+To use lowdefy, we need to have npm/npx installed. This is installed by first installing npm. This can be done with the following link (in this case I'm using Manjaro Linux):
+
+`sudo pacman -Syu nodejs npm`
+
+Next, Lowdefy should be initialized. This can be done with the following command:
+`npx lowdefy@latest init`
+This process can take a while. After successful installation, a lowdefy.yaml is created in the folder you run the command. If not, it means that it has failed. 
+
+Now we can run the frontend running: 
+`npx lowdefy@latest dev`
