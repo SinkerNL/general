@@ -1,0 +1,18 @@
+id: about_me
+type: PageHeaderMenu
+properties:
+  title: About Me
+layout:
+  contentGutter: 16
+
+areas:
+  content:
+    justify: center
+    blocks:
+      - id: title # Title on page
+        type: Title
+        properties:
+          content: About me, that's what it is all about
+          level: 4
+    properties:
+      align: Center

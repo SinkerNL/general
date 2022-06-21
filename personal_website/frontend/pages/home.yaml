@@ -1,0 +1,37 @@
+id: home
+type: PageHeaderMenu
+properties:
+  title: Home
+layout:
+  contentGutter: 16
+
+areas:
+  content:
+    justify: center
+    blocks:
+      - id: content_card
+        type: Card
+        style:
+          maxWidth: 800
+        blocks:
+          - id: content
+            type: Markdown
+            properties:
+              content: |
+                ### Welcome to my website!
+
+                This website is created for some nice stuff about myself. 
+
+                Please check: [about me](/about_me) for more info.
+              skipHtml: false
+  footer:
+    blocks:
+      - id: footer
+        type: Paragraph
+        properties:
+          type: secondary
+          content: |
+            Made by Robert
+    properties:
+      align: Center
+

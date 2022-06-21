@@ -1,36 +1,24 @@
 
 lowdefy: 3.23.3
-name: Robert Zaharia
-license: UNLICENSED
+name: Lowdefy starter
+license: DEFAULT
+
+menus:
+  - id: default
+    links:
+      - id: home
+        type: MenuLink
+        pageId: home
+        properties:
+          icon: ProfileOutlined
+          title: Home
+      - id: about_me
+        type: MenuLink
+        pageId: about_me
+        properties:
+          icon: Person
+          title: About me
 
 pages:
-  - id: welcome
-    type: PageSiderMenu
-    properties:
-      title: Welcome
-    areas:
-      content:
-        justify: center
-        blocks:
-          - id: content_card
-            type: Card
-            style:
-              maxWidth: 800
-            blocks:
-              - id: content
-                type: Result
-                properties:
-                  title: Hello Robert!
-                  subTitle: We are excited to see what you are going to build
-                  icon:
-                    name: HeartTwoTone
-                    color: '#f00'
-      footer:
-        blocks:
-          - id: footer
-            type: Paragraph
-            properties:
-              type: secondary
-              content: |
-                🤖 Made with ❤️ by Robert Zaharia 🤖
-
+  - _ref: pages/home.yaml
+  - _ref: pages/about_me.yaml
