@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr, conint
-from typing import Optional
+from typing import Optional, Dict
 from datetime import datetime 
 
 class PostBase(BaseModel):
@@ -27,6 +27,13 @@ class Post(PostBase):
     created_at: datetime
     owner_id: int
     owner: UserOut
+
+    class Config:
+        orm_mode = True
+
+class PostOut(BaseModel):
+    Post: Post
+    votes: int
 
     class Config:
         orm_mode = True

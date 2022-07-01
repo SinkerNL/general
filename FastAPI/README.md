@@ -28,3 +28,8 @@ Delete -> delete => /posts/:id
 SQLALCHEMY
 - Responsible for defining the columns of our 'posts' table within postgres
 - Is used to query, create delete and or update entries within the database.
+
+## CORS
+Cross Origin Resource Sharing (CORS) allows you to make requests from a web browser on one domain to a server on a different domain.
+
+By default our API will only allow web browsers running on the same domain as our server to make requests to it.
